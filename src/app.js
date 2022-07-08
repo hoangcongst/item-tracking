@@ -1,9 +1,11 @@
 import TelegramBot from 'node-telegram-bot-api'
-import { handleJoonggonara } from './handler/joonggonara.js'
+import { handle as handleNaverCafeSearch } from './handler/navercafesearch.js'
+import { handle as handleJoonggonara } from './handler/joonggonara.js'
 import { GeneralRepository } from './repository/general-repository.js'
 
 const handler = {
-    'joongo': handleJoonggonara
+    'joongo': handleJoonggonara,
+    'navercafesearch': handleNaverCafeSearch
 }
 
 export const lambdaHandler = async (event, context) => {

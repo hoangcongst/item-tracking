@@ -1,0 +1,4 @@
+export const ENGINE = {
+    JOONGGO: 'JOONGGO',
+    NAVERCAFESEARCH: 'NAVERCAFESEARCH'
+}
